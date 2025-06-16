@@ -7,7 +7,7 @@ pipeline{
     environment{
         repoUrl = 'https://github.com/ananthvamsi555/JAVA_Unit_TEST.git'
         branch = 'master'
-        MVN_GOALS = 'Clean package'
+        MVN_GOALS = 'clean package'
         POM_FILE = 'pom.xml'
     }
     stages{
