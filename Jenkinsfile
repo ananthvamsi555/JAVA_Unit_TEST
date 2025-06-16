@@ -6,7 +6,7 @@ pipeline{
     }
     environment{
         REPO_URL = 'https://github.com/ananthvamsi555/JAVA_Unit_TEST.git'
-        BRANCH = 'main'
+        BRANCH = 'master'
         MVN_GOALS = 'Clean package'
         POM_FILE = 'pom.xml'
     }
