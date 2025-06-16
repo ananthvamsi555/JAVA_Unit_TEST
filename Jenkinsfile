@@ -5,15 +5,15 @@ pipeline{
         maven 'Maven'
     }
     environment{
-        REPO_URL = 'https://github.com/ananthvamsi555/JAVA_Unit_TEST.git'
-        BRANCH = 'master'
+        repoUrl = 'https://github.com/ananthvamsi555/JAVA_Unit_TEST.git'
+        branch = 'master'
         MVN_GOALS = 'Clean package'
         POM_FILE = 'pom.xml'
     }
     stages{
         stage("Clone repository"){
             steps{
-                scmCheckout(REPO_URL,BRANCH)
+                scmCheckout(repoUrl,branch)
             }
         }
         stage("Build"){
