@@ -22,4 +22,12 @@ pipeline{
             }
         }
     }
+    post{
+        success{
+            archiveArtifacts artifacts: '**/target/**/*', allowEmptyArchive: true
+        }
+        always{
+            junit '**/target/surefire-reports/*.xml'
+        }
+    }
 }
